@@ -277,7 +277,7 @@
         
         CGRect frame = textView.frame;
         frame.size.height = textView.contentSize.height-6; 
-        frame.size.width = [textView.text sizeWithFont:textView.font constrainedToSize:CGSizeMake(INT64_MAX, INT64_MAX) lineBreakMode:UILineBreakModeMiddleTruncation].width + 25*pdfScale;
+        frame.size.width = [textView.text sizeWithFont:textView.font constrainedToSize:CGSizeMake(INT64_MAX, INT64_MAX) lineBreakMode:NSLineBreakByTruncatingMiddle].width + 25*pdfScale;
         textView.frame = frame;
     }
     else{//there is no text in the text view

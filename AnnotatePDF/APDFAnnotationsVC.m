@@ -213,7 +213,7 @@
 
 -(void)dealloc{
     [annotations release];
-    [self release];
+    [super dealloc];
 }
 
 @end

@@ -74,6 +74,7 @@ static void KQCallback(CFFileDescriptorRef kqRef, CFOptionFlags callBackTypes, v
     self.path = nil;
     CFRunLoopRemoveSource(CFRunLoopGetCurrent(), rls, kCFRunLoopDefaultMode);
     CFFileDescriptorDisableCallBacks(self->kqref, kCFFileDescriptorReadCallBack);
+    [super dealloc];
 }
 
 + (id) watcherForPath: (NSString *) aPath

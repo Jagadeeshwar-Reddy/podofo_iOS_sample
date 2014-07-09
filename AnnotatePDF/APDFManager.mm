@@ -11,6 +11,7 @@
 #import "ResizableTextView.h"
 #import "podofo.h"
 
+#import "CTOpenSSLWrapper.h"
 //using namespace PoDoFo;
 
 @implementation APDFManager
@@ -270,6 +271,139 @@
     }
     paths = [NSArray arrayWithArray:resultArray];
     return paths;
+}
+
+
+#define CONVERSION_CONSTANT 0.002834645669291339
+//using namespace PoDoFo;
+
+/* Common defines needed in all tests */
+#define TEST_SAFE_OP( x ) try {  x; } catch( PoDoFo::PdfError & e ) { \
+e.AddToCallstack( __FILE__, __LINE__, NULL ); \
+e.PrintErrorMsg();\
+/*return*/ e.GetError();\
+}
+
+
+#define TEST_SAFE_OP_IGNORE( x ) try {  x; } catch( PoDoFo::PdfError & e ) { \
+e.AddToCallstack( __FILE__, __LINE__, NULL ); \
+e.PrintErrorMsg();\
+}
+
+#pragma mark -
+#pragma mark Digital signatures
+void CreateSimpleForm( PoDoFo::PdfPage* pPage, PoDoFo::PdfStreamedDocument* pDoc, const PoDoFo::PdfData &signatureData )
+{
+    PoDoFo::PdfPainter painter;
+    PoDoFo::PdfFont*   pFont = pDoc->CreateFont( "Courier" );
+    
+    painter.SetPage( pPage );
+    painter.SetFont( pFont );
+    painter.DrawText( 10000 * CONVERSION_CONSTANT, 280000 * CONVERSION_CONSTANT, "PoDoFo Sign Test" );
+    painter.FinishPage();
+    
+	PoDoFo::PdfSignatureField signField( pPage, PoDoFo::PdfRect( 70000 * CONVERSION_CONSTANT, 10000 * CONVERSION_CONSTANT,
+                                                                50000 * CONVERSION_CONSTANT, 50000 * CONVERSION_CONSTANT ), pDoc );
+    signField.SetFieldName("SignatureFieldName");
+	signField.SetSignature(signatureData);
+	signField.SetSignatureReason("I agree");
+	// Set time of signing
+	signField.SetSignatureDate( PoDoFo::PdfDate() );
+}
+
++(void)addDigitalSignatureOnPage:(NSInteger)pageIndex outpath:(NSString*)path/*doc:(PoDoFo::PdfMemDocument*)aDoc*/{
+    PoDoFo::PdfPage*            pPage;
+    
+    
+    PoDoFo::PdfSignOutputDevice signer([path UTF8String]);
+	// Reserve space for signature
+    signer.SetSignatureSize(1024);
+    
+	PoDoFo::PdfStreamedDocument writer( &signer, PoDoFo::ePdfVersion_1_5 );
+    // Disable default appearance
+    writer.GetAcroForm(PoDoFo::ePdfCreateObject, PoDoFo::PdfAcroForm::ePdfAcroFormDefaultAppearance_None);
+    
+    pPage = writer.CreatePage(PoDoFo::PdfPage::CreateStandardPageSize(PoDoFo::ePdfPageSize_A4 ) );
+    TEST_SAFE_OP( CreateSimpleForm( pPage, &writer, *signer.GetSignatureBeacon() ) );
+    
+    TEST_SAFE_OP( writer.Close() );
+    
+    // Check if position of signature was found
+    if(signer.HasSignaturePosition()) {
+		// Adjust ByteRange for signature
+        signer.AdjustByteRange();
+		
+		// Read data for signature and count it
+		// We have to seek at the beginning of the file
+		signer.Seek(0);
+        
+		// Generate digest and count signature
+		// use NSS, MS Crypto API or OpenSSL
+		// to generate signature in DER format
+        
+		// This is example of generation process
+		// with dummy generator. Check example for
+		// NSS generator
+		/*
+         SimpleSignatureGenerator sg;
+         
+         // Read data to be signed and send them to the
+         // signature generator
+         char buff[65536];
+         size_t len;
+         while( (len = signer.ReadForSignature(buff, 65536))>0 )
+         {
+         sg.appendData(buff, len);
+         }
+         sg.finishData();
+         
+         // Paste signature to the file
+         const PdfData *pSignature = sg.getSignature();
+         */
+        /*
+         CERTCertificate* pCert = read_cert();
+         NSSSignatureGenerator ng(pCert);
+         char buff[65536];
+         size_t len;
+         while( (len = signer.ReadForSignature(buff, 65536))>0 )
+         {
+         ng.appendData(buff, len);
+         }
+         ng.finishData();
+         
+         // Paste signature to the file
+         const PoDoFo::PdfData *pSignature = ng.getSignature();
+         
+         CERT_DestroyCertificate(pCert);
+         
+         if(pSignature!=NULL) {
+         signer.SetSignature(*pSignature);
+         }
+         */
+        
+        
+        /*char buff[65536];
+         size_t len;
+         while( (len = signer.ReadForSignature(buff, 65536))>0 )
+         {
+         }*/
+        
+        
+        NSData *privateKeyData = CTOpenSSLGeneratePrivateRSAKey(1024, CTOpenSSLPrivateKeyFormatPEM);
+      //NSData *publicKeyData = CTOpenSSLExtractPublicKeyFromPrivateRSAKey(privateKeyData);
+        NSData *rawData = [NSData dataWithContentsOfFile:path];
+        NSData *signature = CTOpenSSLRSASignWithPrivateKey(privateKeyData, rawData, CTOpenSSLDigestTypeSHA512);
+        
+        NSString* signatureStr = [[NSString alloc] initWithData:signature encoding:NSUTF8StringEncoding];
+        
+        // Paste signature to the file
+        PoDoFo::PdfData sigData([signatureStr UTF8String]);
+        signer.SetSignature(sigData);
+        
+        
+    }
+    
+	signer.Flush();
 }
 
 @end

@@ -19,7 +19,6 @@
 		703E35B815A6240A00DE834E /* APDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 703E35B715A6240A00DE834E /* APDFView.m */; };
 		70813D6015B8443B0021FBE7 /* iPhoneIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 70813D5F15B8443B0021FBE7 /* iPhoneIcon_Small.png */; };
 		70813D6215B844590021FBE7 /* iPhoneIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 70813D6115B844590021FBE7 /* iPhoneIcon_Big.png */; };
-		70877A0F15F90AEC004D1787 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 70877A0E15F90AEC004D1787 /* index.html */; };
 		709EE559159489C1003208D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709EE558159489C1003208D2 /* UIKit.framework */; };
 		709EE55B159489C1003208D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709EE55A159489C1003208D2 /* Foundation.framework */; };
 		709EE55D159489C1003208D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709EE55C159489C1003208D2 /* CoreGraphics.framework */; };
@@ -39,6 +38,16 @@
 		70CEDDDB15EBBD0000A3B2A2 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CEDDDA15EBBD0000A3B2A2 /* libiconv.2.4.0.dylib */; };
 		70D87DFC15B9665B004D95F6 /* APDFManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70D87DFB15B9665B004D95F6 /* APDFManager.mm */; };
 		70F299C71612F1CF006A77E5 /* SimulatorHandling.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F299C61612F1CF006A77E5 /* SimulatorHandling.m */; };
+		D4DB0037196D1D7F00084294 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D4DB0036196D1D7F00084294 /* index.html */; };
+		D4DB0039196D1D9100084294 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4DB0038196D1D9100084294 /* Default-568h@2x.png */; };
+		D4DB003C196D1F4100084294 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB003A196D1F4100084294 /* libcrypto.a */; };
+		D4DB003D196D1F4100084294 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DB003B196D1F4100084294 /* libssl.a */; };
+		D4DB0042196D226100084294 /* CTOpenSSLAsymmetricEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB0041196D226100084294 /* CTOpenSSLAsymmetricEncryption.m */; };
+		D4DB0046196D228300084294 /* CTOpenSSLDigest.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB0045196D228300084294 /* CTOpenSSLDigest.m */; };
+		D4DB004A196D229900084294 /* CTOpenSSLSymmetricEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB0049196D229900084294 /* CTOpenSSLSymmetricEncryption.m */; };
+		D4DB004D196D22B400084294 /* CTOpenSSLWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB004C196D22B400084294 /* CTOpenSSLWrapper.m */; };
+		D4DB0056196D22BD00084294 /* NSData+CTOpenSSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB0052196D22BD00084294 /* NSData+CTOpenSSL.m */; };
+		D4DB0057196D22BD00084294 /* NSString+CTOpenSSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DB0055196D22BD00084294 /* NSString+CTOpenSSL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +68,6 @@
 		703E35B715A6240A00DE834E /* APDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APDFView.m; sourceTree = "<group>"; };
 		70813D5F15B8443B0021FBE7 /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = ../iPhoneIcon_Small.png; sourceTree = "<group>"; };
 		70813D6115B844590021FBE7 /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = ../iPhoneIcon_Big.png; sourceTree = "<group>"; };
-		70877A0E15F90AEC004D1787 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; name = index.html; path = /Users/kopp/Documents/Xcode/AnnotatePDF/Documentation/html/index.html; sourceTree = "<absolute>"; };
 		709EE554159489C1003208D2 /* AnnotatePDF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnotatePDF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		709EE558159489C1003208D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		709EE55A159489C1003208D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +96,22 @@
 		70D87DFA15B9665B004D95F6 /* APDFManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = APDFManager.h; sourceTree = "<group>"; };
 		70D87DFB15B9665B004D95F6 /* APDFManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = APDFManager.mm; sourceTree = "<group>"; };
 		70F299C61612F1CF006A77E5 /* SimulatorHandling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulatorHandling.m; sourceTree = "<group>"; };
+		D4DB0036196D1D7F00084294 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; name = index.html; path = Documentation/html/index.html; sourceTree = "<group>"; };
+		D4DB0038196D1D9100084294 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D4DB003A196D1F4100084294 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libraries/libcrypto.a; sourceTree = "<group>"; };
+		D4DB003B196D1F4100084294 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libraries/libssl.a; sourceTree = "<group>"; };
+		D4DB0040196D226100084294 /* CTOpenSSLAsymmetricEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOpenSSLAsymmetricEncryption.h; sourceTree = "<group>"; };
+		D4DB0041196D226100084294 /* CTOpenSSLAsymmetricEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTOpenSSLAsymmetricEncryption.m; sourceTree = "<group>"; };
+		D4DB0044196D228300084294 /* CTOpenSSLDigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOpenSSLDigest.h; sourceTree = "<group>"; };
+		D4DB0045196D228300084294 /* CTOpenSSLDigest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTOpenSSLDigest.m; sourceTree = "<group>"; };
+		D4DB0048196D229900084294 /* CTOpenSSLSymmetricEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOpenSSLSymmetricEncryption.h; sourceTree = "<group>"; };
+		D4DB0049196D229900084294 /* CTOpenSSLSymmetricEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTOpenSSLSymmetricEncryption.m; sourceTree = "<group>"; };
+		D4DB004B196D22B400084294 /* CTOpenSSLWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOpenSSLWrapper.h; sourceTree = "<group>"; };
+		D4DB004C196D22B400084294 /* CTOpenSSLWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTOpenSSLWrapper.m; sourceTree = "<group>"; };
+		D4DB0051196D22BD00084294 /* NSData+CTOpenSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CTOpenSSL.h"; sourceTree = "<group>"; };
+		D4DB0052196D22BD00084294 /* NSData+CTOpenSSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CTOpenSSL.m"; sourceTree = "<group>"; };
+		D4DB0054196D22BD00084294 /* NSString+CTOpenSSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CTOpenSSL.h"; sourceTree = "<group>"; };
+		D4DB0055196D22BD00084294 /* NSString+CTOpenSSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTOpenSSL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DB003C196D1F4100084294 /* libcrypto.a in Frameworks */,
+				D4DB003D196D1F4100084294 /* libssl.a in Frameworks */,
 				70CEDDDB15EBBD0000A3B2A2 /* libiconv.2.4.0.dylib in Frameworks */,
 				703E359A159DE40A00DE834E /* QuartzCore.framework in Frameworks */,
 				709EE559159489C1003208D2 /* UIKit.framework in Frameworks */,
@@ -156,6 +182,7 @@
 		7071893015A769FF00B2CE9B /* FileHandling */ = {
 			isa = PBXGroup;
 			children = (
+				D4DB003E196D21E100084294 /* CTOpenSSLWrapper */,
 				70D87DFA15B9665B004D95F6 /* APDFManager.h */,
 				70D87DFB15B9665B004D95F6 /* APDFManager.mm */,
 				70ADE82515EFDB7B00BD0A4A /* DocWatchHelper.h */,
@@ -167,7 +194,7 @@
 		708778EE15F90A7F004D1787 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				70877A0E15F90AEC004D1787 /* index.html */,
+				D4DB0036196D1D7F00084294 /* index.html */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -175,6 +202,7 @@
 		709EE549159489C0003208D2 = {
 			isa = PBXGroup;
 			children = (
+				D4DB0038196D1D9100084294 /* Default-568h@2x.png */,
 				708778EE15F90A7F004D1787 /* Documentation */,
 				7003688B15B61F8500A9E739 /* fonts */,
 				709EE55E159489C1003208D2 /* AnnotatePDF */,
@@ -194,6 +222,8 @@
 		709EE557159489C1003208D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4DB003A196D1F4100084294 /* libcrypto.a */,
+				D4DB003B196D1F4100084294 /* libssl.a */,
 				70CEDDDC15EBBD4800A3B2A2 /* external libraries */,
 				703E3599159DE40A00DE834E /* QuartzCore.framework */,
 				709EE558159489C1003208D2 /* UIKit.framework */,
@@ -261,6 +291,81 @@
 			name = "external libraries";
 			sourceTree = "<group>";
 		};
+		D4DB003E196D21E100084294 /* CTOpenSSLWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB004B196D22B400084294 /* CTOpenSSLWrapper.h */,
+				D4DB004C196D22B400084294 /* CTOpenSSLWrapper.m */,
+				D4DB0047196D228700084294 /* CTOpenSSLSymmetricEncryption */,
+				D4DB0043196D227900084294 /* CTOpenSSLDigest */,
+				D4DB003F196D21F200084294 /* CTOpenSSLAsymmetricEncryption */,
+				D4DB004E196D22BD00084294 /* FrameworkAddtions */,
+			);
+			name = CTOpenSSLWrapper;
+			sourceTree = "<group>";
+		};
+		D4DB003F196D21F200084294 /* CTOpenSSLAsymmetricEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0040196D226100084294 /* CTOpenSSLAsymmetricEncryption.h */,
+				D4DB0041196D226100084294 /* CTOpenSSLAsymmetricEncryption.m */,
+			);
+			name = CTOpenSSLAsymmetricEncryption;
+			sourceTree = "<group>";
+		};
+		D4DB0043196D227900084294 /* CTOpenSSLDigest */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0044196D228300084294 /* CTOpenSSLDigest.h */,
+				D4DB0045196D228300084294 /* CTOpenSSLDigest.m */,
+			);
+			name = CTOpenSSLDigest;
+			sourceTree = "<group>";
+		};
+		D4DB0047196D228700084294 /* CTOpenSSLSymmetricEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0048196D229900084294 /* CTOpenSSLSymmetricEncryption.h */,
+				D4DB0049196D229900084294 /* CTOpenSSLSymmetricEncryption.m */,
+			);
+			name = CTOpenSSLSymmetricEncryption;
+			sourceTree = "<group>";
+		};
+		D4DB004E196D22BD00084294 /* FrameworkAddtions */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB004F196D22BD00084294 /* Foundation */,
+			);
+			path = FrameworkAddtions;
+			sourceTree = "<group>";
+		};
+		D4DB004F196D22BD00084294 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0050196D22BD00084294 /* NSData */,
+				D4DB0053196D22BD00084294 /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		D4DB0050196D22BD00084294 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0051196D22BD00084294 /* NSData+CTOpenSSL.h */,
+				D4DB0052196D22BD00084294 /* NSData+CTOpenSSL.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		D4DB0053196D22BD00084294 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				D4DB0054196D22BD00084294 /* NSString+CTOpenSSL.h */,
+				D4DB0055196D22BD00084294 /* NSString+CTOpenSSL.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,7 +392,12 @@
 		709EE54B159489C0003208D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					709EE553159489C1003208D2 = {
+						DevelopmentTeam = WVY32XDA28;
+					};
+				};
 			};
 			buildConfigurationList = 709EE54E159489C0003208D2 /* Build configuration list for PBXProject "AnnotatePDF" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -311,13 +421,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DB0037196D1D7F00084294 /* index.html in Resources */,
 				709EE563159489C1003208D2 /* InfoPlist.strings in Resources */,
 				709EE56C159489C1003208D2 /* MainStoryboard_iPhone.storyboard in Resources */,
 				709EE56F159489C1003208D2 /* MainStoryboard_iPad.storyboard in Resources */,
 				7003688C15B61F8500A9E739 /* fonts in Resources */,
+				D4DB0039196D1D9100084294 /* Default-568h@2x.png in Resources */,
 				70813D6015B8443B0021FBE7 /* iPhoneIcon_Small.png in Resources */,
 				70813D6215B844590021FBE7 /* iPhoneIcon_Big.png in Resources */,
-				70877A0F15F90AEC004D1787 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DB0042196D226100084294 /* CTOpenSSLAsymmetricEncryption.m in Sources */,
 				709EE565159489C1003208D2 /* main.m in Sources */,
 				709EE569159489C1003208D2 /* APDFAppDelegate.m in Sources */,
 				709EE572159489C1003208D2 /* APDFMasterViewController.m in Sources */,
@@ -338,6 +450,11 @@
 				703E35B815A6240A00DE834E /* APDFView.m in Sources */,
 				70D87DFC15B9665B004D95F6 /* APDFManager.mm in Sources */,
 				70ADE81E15ED68D100BD0A4A /* APDFAnnotationsVC.m in Sources */,
+				D4DB0046196D228300084294 /* CTOpenSSLDigest.m in Sources */,
+				D4DB0057196D22BD00084294 /* NSString+CTOpenSSL.m in Sources */,
+				D4DB004D196D22B400084294 /* CTOpenSSLWrapper.m in Sources */,
+				D4DB004A196D229900084294 /* CTOpenSSLSymmetricEncryption.m in Sources */,
+				D4DB0056196D22BD00084294 /* NSData+CTOpenSSL.m in Sources */,
 				70ADE82715EFDB7B00BD0A4A /* DocWatchHelper.m in Sources */,
 				70137A0E15F6AB6A00EA8731 /* APDFNewAnnotationVC.m in Sources */,
 				70F299C71612F1CF006A77E5 /* SimulatorHandling.m in Sources */,
@@ -377,9 +494,14 @@
 		709EE576159489C1003208D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -391,34 +513,51 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = NO;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/libraries/";
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/";
 			};
 			name = Debug;
 		};
 		709EE577159489C1003208D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/libraries/";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -427,8 +566,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Felix Kopp (HH2ZCDRD6D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Felix Kopp (HH2ZCDRD6D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
@@ -436,6 +575,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnnotatePDF/AnnotatePDF-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/headers/openssl",
 					"$(SRCROOT)/headers/include",
 					"$(SRCROOT)/headers/fontconfig",
 					"$(SRCROOT)/headers/include/podofo",
@@ -446,8 +586,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/libraries\"",
+					"$(PROJECT_DIR)/libraries",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -455,9 +596,9 @@
 					"-Wl,-headerpad_max_install_names",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5723378D-AACD-4179-BF9A-22C0DD41F542";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "082B84BF-31EF-41E0-B757-B0E2904B3DCD";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/fontconfig $(SRCROOT)/headers/include/podofo $(SRCROOT)/headers/include/podofo/doc $(SRCROOT)/headers/include/podofo/base";
+				PROVISIONING_PROFILE = "13B7FFBA-F7DF-4B45-9361-F3B0C6225C38";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "13B7FFBA-F7DF-4B45-9361-F3B0C6225C38";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/openssl $(SRCROOT)/headers/fontconfig $(SRCROOT)/headers/include/podofo $(SRCROOT)/headers/include/podofo/doc $(SRCROOT)/headers/include/podofo/base";
 				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Felix Kopp (HH2ZCDRD6D)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Felix Kopp (HH2ZCDRD6D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +617,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AnnotatePDF/AnnotatePDF-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/headers/openssl",
 					"$(SRCROOT)/headers/include",
 					"$(SRCROOT)/headers/fontconfig",
 					"$(SRCROOT)/headers/include/podofo",
@@ -486,8 +628,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
 					"\"$(SRCROOT)/libraries\"",
+					"$(PROJECT_DIR)/libraries",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -499,7 +642,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5723378D-AACD-4179-BF9A-22C0DD41F542";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5723378D-AACD-4179-BF9A-22C0DD41F542";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/fontconfig $(SRCROOT)/headers/include/podofo $(SRCROOT)/headers/include/podofo/doc $(SRCROOT)/headers/include/podofo/base";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/headers/openssl $(SRCROOT)/headers/fontconfig $(SRCROOT)/headers/include/podofo $(SRCROOT)/headers/include/podofo/doc $(SRCROOT)/headers/include/podofo/base";
 				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = app;
 			};

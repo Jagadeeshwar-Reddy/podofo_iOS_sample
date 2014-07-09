@@ -92,4 +92,11 @@
  */
 +(NSArray*)getPdfPathsOfArray:(NSArray*)paths;
 
+/**
+ My custom function that generates digital signature for the PDF and adds it to the pdf signature dictionary.
+ @param page number in which the signature has to be embedded
+ @param output file path where the _signed pdf has to be returned
+ */
++(void)addDigitalSignatureOnPage:(NSInteger)pageIndex outpath:(NSString*)path;
+
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B09DA481-ADF2-4AE5-B766-8C04B9D46809</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnnotatePDF</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3130D8BD-69D6-4A82-A8F0-797A98D3AEA9</key>
+		<string>https://github.com/Jagadeeshwar-Reddy/podofo_iOS_sample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnnotatePDF.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3130D8BD-69D6-4A82-A8F0-797A98D3AEA9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Jagadeeshwar-Reddy/podofo_iOS_sample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3130D8BD-69D6-4A82-A8F0-797A98D3AEA9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3130D8BD-69D6-4A82-A8F0-797A98D3AEA9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>podofo_iOS_sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>
